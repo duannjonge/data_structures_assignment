@@ -16,4 +16,10 @@ expression2 = "([)]"
 print(is_balanced(expression1))  # Output: True
 print(is_balanced(expression2))  # Output: False 
 
+## Question 2
+
+Question 2: Write a function remove_duplicates(sequence) that takes a 
+sequence (list or tuple) and returns a new sequence with duplicates 
+removed while maintaining the original order of elements.
+
 

@@ -28,3 +28,14 @@ expression1 = "([]{})"
 expression2 = "([)]"
 
 
+#Question Two 
+
+def remove_duplicates(sequence):
+    pass
+    # new_list=[ for item in sequence]
+    return list(set(sequence))
+
+input_sequence = [2, 3, 2, 4, 5, 3, 6, 7, 5]
+result = remove_duplicates(input_sequence)
+
+
