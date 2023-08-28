@@ -39,3 +39,27 @@ input_sequence = [2, 3, 2, 4, 5, 3, 6, 7, 5]
 result = remove_duplicates(input_sequence)
 
 
+#Question Three
+
+
+import string
+
+def word_frequency(sentence):
+    translator = str.maketrans('', '', string.punctuation)  # Create a translation table to remove punctuation
+    words = sentence.lower().translate(translator).split()
+    word_count = {}
+    
+    for word in words:
+        if word in word_count:
+            word_count[word] += 1
+        else:
+            word_count[word] = 1
+    
+    return word_count
+
+sentence = "This is a test sentence. This sentence is just a test."
+result = word_frequency(sentence)
+print(result)
+
+
+
