@@ -28,10 +28,15 @@ expression1 = "([]{})"
 expression2 = "([)]"
 
 
+# test output 
+
+print(is_balanced(expression1))  # Output: True
+print(is_balanced(expression2))  # Output: False
+
+
 #Question Two 
 
 def remove_duplicates(sequence):
-    pass
     # new_list=[ for item in sequence]
     return list(set(sequence))
 
