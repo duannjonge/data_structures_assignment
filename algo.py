@@ -35,13 +35,36 @@ print(is_balanced(expression2))  # Output: False
 
 
 #Question Two 
-
 def remove_duplicates(sequence):
-    # new_list=[ for item in sequence]
-    return list(set(sequence))
+    """
+    This function removes duplicates from a sequence while maintaining the original order of elements.
+    Args:
+        sequence: A list or tuple.
+    Returns:
+        A new sequence with duplicates removed.
+    """
+    # Check if the input sequence is valid.
+    if not isinstance(sequence, (list, tuple)):
+        raise TypeError("The input sequence must be a list or tuple.")
+    
+    # Create a new list to store the unique elements while preserving order.
+    unique_elements = []
+    
+    # Iterate through the original sequence, adding elements to the new list if not already present.
+    for element in sequence:
+        if element not in unique_elements:
+            unique_elements.append(element)
+    
+    return unique_elements
 
-input_sequence = [2, 3, 2, 4, 5, 3, 6, 7, 5]
-result = remove_duplicates(input_sequence)
+
+# def remove_duplicates(sequence):
+#     # new_list=[ for item in sequence]
+#     return list(set(sequence))
+
+# input_sequence = [2, 3, 2, 4, 5, 3, 6, 7, 5]
+# result = remove_duplicates(input_sequence)
+
 
 
 #Question Three
